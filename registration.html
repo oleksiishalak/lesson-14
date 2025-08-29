@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registration</title>
+  <link rel="stylesheet" href="./styles/preloaded.css">
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/font.css">
   <link rel="stylesheet" href="./styles/registration.css">
 </head>
 <body>
+
+    <div class="preloader">
+    <div class="spinner"></div>
+    </div>
 
     <div class="wrapper">
     <form class="form" autocomplete="on">
@@ -49,6 +54,12 @@
               required
               />
       </label>
+
+     <label class="checkbox">
+     <input type="checkbox" required>
+     <span>I agree to the Terms of Use</span>
+     </label>
+
       <button type="submit" class="submit__btn">Register</button>
       <p class="divider">Or register with</p>
       <button class="social__btn"><img src="./assets/icons/google-logo.svg" alt="google logo"/>Continue with Google</button>
@@ -56,6 +67,8 @@
     <div class="form-footer"></div>
     </form>
     </div>
+
+    <script src="main.js"></script>
 
 </body>
 </html>

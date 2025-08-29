@@ -8,7 +8,7 @@
 
 form {
   width: 500px;
-  height: 700px;
+  height: 800px;
   background: white;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@ form {
   margin-top: 52px;
 }
 
-span {
+.links span {
   width: 1px;
   height: 20px;
   background: black;
@@ -116,4 +116,56 @@ input::placeholder {
   margin-top: auto;
 }
 
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  color: #3D3D3D;
+  width: 300px;          
+  
+}
 
+.checkbox input {
+  display: none;
+}
+
+.checkbox span {
+  position: relative;
+  padding-left: 30px; 
+}
+
+.checkbox span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  border: 1px solid #A5A5A5;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.checkbox input:checked + span::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  width: 6px;
+  height: 12px;
+  border: solid #FFFF;
+  border-width: 0 2px 2px 0;
+  transform: translate( 60%, -60%) rotate(40deg);
+}
+
+.checkbox input:checked + span::before {
+  background-color: #46a358;
+  border-color: #46a358;
+}
+
+
+
+
+
+ 
