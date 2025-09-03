@@ -1062,8 +1062,10 @@ h1 {
     flex: 1 1 100%;
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 15px;
   }
-
+   #sort-select {
+   font-size: 12px;
+}
 }
 
